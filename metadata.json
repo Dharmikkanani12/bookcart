@@ -1,0 +1,6 @@
+{
+  "name": "BookCart E2E Test Suite Studio",
+  "description": "Production Playwright & Cypress test runner, page object models, live simulator, Allure reporting dashboard, and test generator for BookCart e-commerce app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
