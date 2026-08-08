@@ -1,6 +1,26 @@
 # BookCart End-to-End (E2E) Test Suite Studio
 
-A production-grade, full-featured End-to-End (E2E) Automation Test Suite Studio built with **TypeScript**, **Playwright**, **Cypress**, and **React**. Designed specifically to validate the [BookCart E-Commerce Demo Application](https://bookcart.azurewebsites.net/) using industry-standard Quality Assurance (QA) practices.
+[![roadmap.sh Project](https://img.shields.io/badge/roadmap.sh-E2E%20Test%20Cases%20for%20E--Commerce%20App-blue?style=flat-square&logo=roadmapdotsh)](https://roadmap.sh/projects/e2e-test-ecommerce-app)
+
+A production-grade, full-featured End-to-End (E2E) Automation Test Suite Studio built with **TypeScript**, **Playwright**, **Cypress**, and **React**. Designed specifically to fulfill the requirements of the [roadmap.sh E2E Test Cases for an E-Commerce App Project](https://roadmap.sh/projects/e2e-test-ecommerce-app), targeting the [BookCart E-Commerce Demo Application](https://bookcart.azurewebsites.net/) using industry-standard Quality Assurance (QA) practices.
+
+---
+
+## 📌 roadmap.sh Project Overview & Requirements
+
+This project fulfills the full scope of the **[roadmap.sh E2E Testing Project](https://roadmap.sh/projects/e2e-test-ecommerce-app)**:
+
+* **Target Application**: [https://bookcart.azurewebsites.net/](https://bookcart.azurewebsites.net/)
+* **Core Requirements**:
+  1. **User Authentication**: Automated specs for Login, Logout, and User Registration with form validations.
+  2. **Product Search & Filtering**: Verification of title search, category navigation (Biography, Fiction, Drama, Mystery), and price filter bounds.
+  3. **Shopping Cart Management**: Validation of adding books to cart, updating item quantities, badge count updates, and item deletion.
+  4. **End-to-End Checkout Flow**: Full user journey from cart review to shipping address entry and order placement confirmation.
+* **Best Practices & Constraints**:
+  - **Page Object Model (POM)**: Strict separation of locators and actions into clean Page Classes (`LoginPage.ts`, `HomePage.ts`, `CartPage.ts`, `CheckoutPage.ts`).
+  - **User-Facing Locators**: Prioritizing resilient selectors (`getByRole`, `getByText`, `getByLabel`) over fragile XPaths or generated CSS classes.
+  - **Zero Flakiness**: Dynamic waiting using response interceptions (`page.waitForResponse` or `cy.intercept`) instead of fixed sleep timeouts (`page.waitForTimeout`).
+  - **Cross-Browser & CI/CD Matrix**: Parallel headless test runs across Chromium, Firefox, and WebKit on GitHub Actions.
 
 ---
 
